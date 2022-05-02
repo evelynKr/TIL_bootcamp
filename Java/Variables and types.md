@@ -115,10 +115,10 @@ class Variable {
 
 ### 1. System.out.printf() 메소드의 기본적인 사용법
 
-- `("")안의 내용을 출력한다는 의미`
-  System.out.printf("안녕하세요") ----> 안녕하세요
-- `숫자를 나타내는 서식` `%d`를 사용하는 경우
-  System.out.printf("100") ----> 100 (문자)
+- `("")안의 내용을 출력한다는 의미` <br />
+  System.out.printf("안녕하세요") ----> 안녕하세요 <br />
+- `숫자를 나타내는 서식` `%d`를 사용하는 경우 <br />
+  System.out.printf("100") ----> 100 (문자) <br />
   System.out.printf("%d",100) ----> 100 (숫자)
 
 ```
