@@ -202,4 +202,62 @@ public class PayCalc2 {
 }
 ```
 
+<br />
+
 > ☞ 성적처리 클래스를 작성하세요.
+
+```
+package day03;
+class Score {
+  String name;
+  int kuk;
+  int eng;
+  int math;
+
+  public int total() {
+    return kuk + eng + math;
+  }
+
+  public double avg() {
+    return total() / 3;
+  }
+
+  public void printScore() {
+    System.out.println("------- 성 적 ------");
+    System.out.println("-------------------");
+    System.out.println("성명 : "+ name);
+    System.out.println("국어점수: " + kuk);
+    System.out.println("영어점수: " + eng);
+    System.out.println("수학점수: " + math);
+    System.out.println("총점 : "+total());
+    System.out.println("평균 : "+avg());
+    System.out.println();
+  }
+}
+
+public class ScoreCalc {
+  public static void main(String[] args) {
+    Score s1 = new Score();
+    Score s2 = new Score();
+    Score s3 = new Score();
+
+    s1.name = "왕눈이";
+    s1.kuk= 90;
+    s1.eng = 50;
+    s1.math = 45;
+    s1.printScore();
+
+    s2.name = "아로미";
+    s2.kuk= 63;
+    s2.eng = 74;
+    s2.math = 85;
+    s2.printScore();
+
+    s3.name = "투투";
+    s3.kuk= 10;
+    s3.eng = 98;
+    s3.math = 55;
+    s3.printScore();
+  }
+}
+```
