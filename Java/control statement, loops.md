@@ -336,6 +336,35 @@ public class GuguDan{
 7 * 7 = 49| 8 * 7 = 56| 9 * 7 = 63
 7 * 8 = 56| 8 * 8 = 64| 9 * 8 = 72
 7 * 9 = 63| 8 * 9 = 72| 9 * 9 = 81
+```
 
-▷ 구구단을 역순으로 출력하세요.
+<br />
+
+> 구구단을 역순으로 출력하세요.
+
+```
+package day02;
+
+public class GuguDan {
+
+  public static void main(String[] args) {
+
+    for (int i = 9; i >= 1; i -= 3) {
+        System.out.println("   " + i + "단\t\t   " + (i-1) + "단\t\t   " + (i-2) + "단");
+
+        System.out.println("------------------------------------------");
+
+        for (int j = 9; j >= 1; j--) {
+            System.out.print(i + " * " + j + " = " + i*j + "\t");
+
+            System.out.print((i-1) + " * " + j + " = " + (i-1)*j + "\t");
+
+            System.out.print((i-2) + " * " + j + " = " + (i-2)*j);
+
+            System.out.println("");
+        }
+        System.out.println("");
+    }
+  }
+}
 ```
